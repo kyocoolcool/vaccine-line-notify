@@ -24,9 +24,9 @@ public class LineNotify {
     public void sendNotify() throws IOException {
          boolean flag = false;
         //AZ
-//        Document doc = Jsoup.connect("https://reg.ntuh.gov.tw/WebAdministration/VaccineClinicReg.aspx?Hosp=T0&Reg=&cliniccode=03").validateTLSCertificates(false).get();
+        Document doc = Jsoup.connect("https://reg.ntuh.gov.tw/WebAdministration/VaccineClinicReg.aspx?Hosp=T0&Reg=&cliniccode=03").validateTLSCertificates(false).get();
         //莫德納
-        Document doc = Jsoup.connect("https://reg.ntuh.gov.tw/WebAdministration/VaccineClinicReg.aspx?Hosp=T0&Reg=&cliniccode=06").validateTLSCertificates(false).get();
+//        Document doc = Jsoup.connect("https://reg.ntuh.gov.tw/WebAdministration/VaccineClinicReg.aspx?Hosp=T0&Reg=&cliniccode=06").validateTLSCertificates(false).get();
 //        Elements select = doc.select("#pnl_ClinicTable > table > tbody > tr:eq(2) > td > span > span > label");
         Elements select = doc.select("#pnl_ClinicTable > table > tbody > tr:eq(2) > td > span > label");
         String[] s = select.text().split(" ");
