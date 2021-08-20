@@ -20,7 +20,7 @@ import java.util.Map;
 public class LineNotify {
     Logger logger=LoggerFactory.getLogger(LineNotify.class);
 
-    @Scheduled(cron = "0 * * * * *")
+    @Scheduled(cron = "*/30 * * * * *")
     public void sendNotify() throws IOException {
          boolean flag = false;
         //AZ
